@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>https://bug4.cn/about/index.html</loc>
+    
+    <lastmod>2018-03-16T09:23:57.105Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://bug4.cn/tags/index.html</loc>
     
     <lastmod>2018-03-15T09:42:48.597Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/posts/uncategorized/2018-03-15-hello-world.html</loc>
+    <loc>https://bug4.cn/posts/uncategorized/2018-03-15-hello-world.html</loc>
     
     <lastmod>2018-03-15T07:21:58.396Z</lastmod>
     
