@@ -6,15 +6,38 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bug4.cn/"/>
-  <updated>2018-03-15T07:21:58.396Z</updated>
+  <updated>2018-03-17T09:59:23.104Z</updated>
   <id>https://bug4.cn/</id>
   
   <author>
-    <name>Yu见</name>
+    <name>Yu,见</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初探Hexo</title>
+    <link href="https://bug4.cn/posts/uncategorized/2018-03-17-%E5%88%9D%E6%8E%A2Hexo.html"/>
+    <id>https://bug4.cn/posts/uncategorized/2018-03-17-初探Hexo.html</id>
+    <published>2018-03-17T09:58:33.000Z</published>
+    <updated>2018-03-17T09:59:23.104Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://bug4.cn/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

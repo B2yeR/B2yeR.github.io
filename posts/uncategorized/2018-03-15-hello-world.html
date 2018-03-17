@@ -99,7 +99,7 @@
     root: '/',
     scheme: 'Mist',
     version: '',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -309,7 +309,7 @@
     <link itemprop="mainEntityOfPage" href="https://bug4.cn/posts/uncategorized/2018-03-15-hello-world.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yu见">
+      <meta itemprop="name" content="Yu,见">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/tx.jpg">
     </span>
@@ -376,6 +376,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -423,14 +428,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Yu见 微信支付"/>
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Yu,见 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="Yu见 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Yu,见 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -448,7 +453,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
-    Yu见
+    Yu,见
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
@@ -471,6 +476,22 @@
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/uncategorized/2018-03-17-初探Hexo.html" rel="prev" title="初探Hexo">
+                初探Hexo <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
       
@@ -485,25 +506,11 @@
 
     <div class="post-spread">
       
-        <!--MOB SHARE BEGIN-->
-<div class="-mob-share-ui-button -mob-share-open">分享</div>
-<div class="-mob-share-ui" style="display: none">
-<ul class="-mob-share-list">
-<li class="-mob-share-weibo"><p>新浪微博</p></li>
-<li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
-<li class="-mob-share-qzone"><p>QQ空间</p></li>
-<li class="-mob-share-qq"><p>QQ好友</p></li>
-<li class="-mob-share-renren"><p>人人网</p></li>
-<li class="-mob-share-kaixin"><p>开心网</p></li>
-<li class="-mob-share-douban"><p>豆瓣</p></li>
-<li class="-mob-share-facebook"><p>Facebook</p></li>
-<li class="-mob-share-twitter"><p>Twitter</p></li>
-</ul>
-<div class="-mob-share-close">取消</div>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aaceb8d6bcf39ce" async = "async" ></script>
 </div>
-<div class="-mob-share-ui-bg"></div>
-<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=24b210ee32932"></script>
-<!--MOB SHARE END-->        
+
       
     </div>
   </div>
@@ -557,9 +564,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/tx.jpg"
-                alt="Yu见" />
+                alt="Yu,见" />
             
-              <p class="site-author-name" itemprop="name">Yu见</p>
+              <p class="site-author-name" itemprop="name">Yu,见</p>
               <p class="site-description motion-element" itemprop="description">不知道写什么,其实这就是一个技术博客,记录我学习JAVA,PHP,GO的记录而已;时刻告诫自己:业精于勤而荒于嬉,行成于思而毁于随,</p>
           </div>
 
@@ -570,7 +577,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -578,6 +585,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -668,7 +684,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Yu见</span>
+  <span class="author" itemprop="copyrightHolder">Yu,见</span>
 
   
 </div>
@@ -688,6 +704,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
@@ -702,6 +738,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
