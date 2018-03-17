@@ -305,6 +305,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/uncategorized/2018-03-15-hello-world.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/uncategorized/2018-03-15-hello-world.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -390,6 +400,24 @@
     
 
     
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yu见
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://bug4.cn/posts/uncategorized/2018-03-15-hello-world.html" title="Hello World">https://bug4.cn/posts/uncategorized/2018-03-15-hello-world.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
 
     <footer class="post-footer">
       
@@ -398,6 +426,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/uncategorized/2018-03-17-about.html" rel="prev" title="about">
+                about <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -413,6 +457,26 @@
 
     <div class="post-spread">
       
+        <!--MOB SHARE BEGIN-->
+<div class="-mob-share-ui-button -mob-share-open">分享</div>
+<div class="-mob-share-ui" style="display: none">
+<ul class="-mob-share-list">
+<li class="-mob-share-weibo"><p>新浪微博</p></li>
+<li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+<li class="-mob-share-qzone"><p>QQ空间</p></li>
+<li class="-mob-share-qq"><p>QQ好友</p></li>
+<li class="-mob-share-renren"><p>人人网</p></li>
+<li class="-mob-share-kaixin"><p>开心网</p></li>
+<li class="-mob-share-douban"><p>豆瓣</p></li>
+<li class="-mob-share-facebook"><p>Facebook</p></li>
+<li class="-mob-share-twitter"><p>Twitter</p></li>
+</ul>
+<div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=24b210ee32932"></script>
+<!--MOB SHARE END-->        
+      
     </div>
   </div>
 
@@ -425,9 +489,7 @@
 
   
     <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDg2NC8xMTQwMQ"></div>
     </div>
-
   
 
 
@@ -480,7 +542,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -726,26 +788,37 @@
 
 
   
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-
-
-
-
-
-
-
-
-
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: '5pOUqrYLbRMrYAcgD9dX53DR-gzGzoHsz',
+        appKey: '4fWPtKr7coDgbipfXoAVbvqP',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
