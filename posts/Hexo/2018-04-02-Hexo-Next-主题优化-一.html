@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Bug4.cn">
 <meta property="og:description" content="Hexo版本是3.3.8 NexT.Pisces v5.1.2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-02T12:58:35.017Z">
+<meta property="og:updated_time" content="2018-05-05T10:08:14.111Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Next-主题优化(一)">
 <meta name="twitter:description" content="Hexo版本是3.3.8 NexT.Pisces v5.1.2">
@@ -391,6 +391,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  526
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
 
           
 
@@ -427,8 +458,14 @@
 </li>
 </ol>
 <ul>
-<li>修改<code>Hexo</code> 站点目录下的<code>_config.yml</code>的主题</li>
+<li>修改<code>Hexo</code> 站点目录下的<code>_config.yml</code>的主题<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
+<h2 id="下面就来说说我这个blog对于Next主题的操作地方"><a href="#下面就来说说我这个blog对于Next主题的操作地方" class="headerlink" title="下面就来说说我这个blog对于Next主题的操作地方"></a>下面就来说说我这个blog对于Next主题的操作地方</h2><h3 id="1-基本设置："><a href="#1-基本设置：" class="headerlink" title="1.基本设置："></a>1.基本设置：</h3><p>打开<code>Hexo 站点</code>目录下的<code>_config.yml</code>修改内容如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: Hexo #网站标题</span><br><span class="line">subtitle: #网站副标题</span><br><span class="line">description: #网站描述</span><br><span class="line">author: author #您的名字</span><br><span class="line">language: zh-Hans #网站使用的语言</span><br><span class="line">timezone: Asia/Shanghai #网站时区。Hexo 默认使用您电脑的时区。</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-设置主题风格"><a href="#2-设置主题风格" class="headerlink" title="2.设置主题风格:"></a>2.设置主题风格:</h3><p>打开<code>themes/next</code>下的<code>_config.ym</code>l文件，搜索<code>scheme</code> 关键字，将你需用启用的<code>scheme</code>前面注释 # 去除即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Scheme Settings</span><br><span class="line"># ---------------------------------------------------------------</span><br><span class="line"># Schemes</span><br><span class="line">#scheme: Muse # 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</span><br><span class="line">#scheme: Mist # Muse 的紧凑版本，整洁有序的单栏外观</span><br><span class="line">scheme: Pisces # 双栏 Scheme，小家碧玉似的清新</span><br><span class="line">#scheme: Gemini # 类似 Pisces</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-添加头像"><a href="#3-添加头像" class="headerlink" title="3.添加头像"></a>3.添加头像</h3><p>打开<code>themes/next</code>下的<code>_config.yml</code>文件，搜索 <code>Sidebar Avatar</code>关键字，去掉<code>avatar</code>前面的<code>#</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Sidebar Avatar</span><br><span class="line"># in theme directory(source/images): /images/avatar.jpg</span><br><span class="line"># in site  directory(source/uploads): /uploads/avatar.jpg</span><br><span class="line">avatar: http://example.com/avatar.png</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-设置浏览页面的时候显示页面进度"><a href="#4-设置浏览页面的时候显示页面进度" class="headerlink" title="4.设置浏览页面的时候显示页面进度"></a>4.设置浏览页面的时候显示页面进度</h3><p>打开<code>themes/next</code>下的<code>_config.yml</code>,设置<code>scrollpercent</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Scroll percent label in b2t button</span><br><span class="line"> scrollpercent: true</span><br></pre></td></tr></table></figure></p>
+<p>如果想把<code>top</code>按钮放在侧边栏,打开<code>themes/next</code>下的<code>_config.yml</code>,搜索关键字<code>b2t</code>,把<code>false</code>改为<code>true</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Back to top in sidebar</span><br><span class="line">  b2t: true</span><br><span class="line"></span><br><span class="line">  # Scroll percent label in b2t button</span><br><span class="line">  scrollpercent: true</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -516,6 +553,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/posts/uncategorized/2018-04-04-hello-world.html" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -575,8 +616,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -677,6 +727,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下面就来说说我这个blog对于Next主题的操作地方"><span class="nav-number">1.</span> <span class="nav-text">下面就来说说我这个blog对于Next主题的操作地方</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-基本设置："><span class="nav-number">1.1.</span> <span class="nav-text">1.基本设置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-设置主题风格"><span class="nav-number">1.2.</span> <span class="nav-text">2.设置主题风格:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-添加头像"><span class="nav-number">1.3.</span> <span class="nav-text">3.添加头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-设置浏览页面的时候显示页面进度"><span class="nav-number">1.4.</span> <span class="nav-text">4.设置浏览页面的时候显示页面进度</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
