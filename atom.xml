@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bug4.cn/"/>
-  <updated>2018-05-05T10:08:14.111Z</updated>
+  <updated>2018-05-05T12:07:45.215Z</updated>
   <id>https://bug4.cn/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo-</title>
+    <link href="https://bug4.cn/posts/uncategorized/2018-05-05-Hexo.html"/>
+    <id>https://bug4.cn/posts/uncategorized/2018-05-05-Hexo.html</id>
+    <published>2018-05-05T12:07:45.000Z</published>
+    <updated>2018-05-05T12:07:45.215Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Next-Go ......开始写作吧！</title>
+    <link href="https://bug4.cn/posts/Hexo/2018-05-05-Hexo-Next-Go.html"/>
+    <id>https://bug4.cn/posts/Hexo/2018-05-05-Hexo-Next-Go.html</id>
+    <published>2018-05-05T10:20:43.000Z</published>
+    <updated>2018-05-05T12:04:02.680Z</updated>
+    
+    <content type="html"><![CDATA[<p>在这里说明下，这篇文章主要是记录下我在刚开始操作Hexo-Next时候如何去写的一些简单操作！Let’s Go！<br><a id="more"></a></p><h3 id="1-文章的创建和删除"><a href="#1-文章的创建和删除" class="headerlink" title="1.文章的创建和删除"></a>1.文章的创建和删除</h3><p><strong>.</strong> 创建文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd you-site</span><br><span class="line">$ hexo new post &quot;you title&quot;</span><br></pre></td></tr></table></figure></p><p><strong>.</strong> 文章的目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-site/source/_posts</span><br></pre></td></tr></table></figure></p><p><strong>.</strong> 删除文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">在/source/_posts/中直接删除了相应的.md文件</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p><h3 id="2-标签"><a href="#2-标签" class="headerlink" title="2.标签"></a>2.标签</h3><p><strong>.</strong> hexo初始是没有<code>标签</code>目录的需要自己创建<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd you-site</span><br><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure></p><p><strong>.</strong> 创建完成后,打开<code>you-site/source/tags</code>的<code>index.md</code>,修改如下</p><hr><p>到这里基本上的东西都已经差不多了,那么是时候开始写作了。 </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在这里说明下，这篇文章主要是记录下我在刚开始操作Hexo-Next时候如何去写的一些简单操作！Let’s Go！&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://bug4.cn/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://bug4.cn/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo-Next-主题优化(一)</title>
