@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="业精于勤而荒于嬉,行成于思而毁于随! 如果你想在技术的道路上走下去,就必须不停的学习和补充……" />
+  <meta name="keywords" content="SpringBoot热部署" />
 
 
 
@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="业精于勤而荒于嬉,行成于思而毁于随!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Bug4.cn">
-<meta property="og:url" content="https://bug4.cn/archives/2018/04/index.html">
+<meta name="description" content="今天群里有哥们问到了热部署得问题身为JAVA程序员，等待代码编译是一件痛苦的事情。况且追求高效是程序员所具有的一种天然品性。在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载/部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷。收集了一些资料后，亲身验证，以下方法可行，请参照以下方法设置。（本文以idea 为例">
+<meta name="keywords" content="SpringBoot热部署">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot热部署：spring-boot-devtools在Idea中热部署方法">
+<meta property="og:url" content="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html">
 <meta property="og:site_name" content="Bug4.cn">
-<meta property="og:description" content="业精于勤而荒于嬉,行成于思而毁于随!">
+<meta property="og:description" content="今天群里有哥们问到了热部署得问题身为JAVA程序员，等待代码编译是一件痛苦的事情。况且追求高效是程序员所具有的一种天然品性。在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载/部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷。收集了一些资料后，亲身验证，以下方法可行，请参照以下方法设置。（本文以idea 为例">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/_image/2018-06-23-15-59-10.jpg">
+<meta property="og:image" content="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/_image/2018-06-23-16-08-48.jpg">
+<meta property="og:image" content="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/_image/2018-06-23-16-08-54.jpg">
+<meta property="og:updated_time" content="2018-06-23T08:12:06.504Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bug4.cn">
-<meta name="twitter:description" content="业精于勤而荒于嬉,行成于思而毁于随!">
+<meta name="twitter:title" content="SpringBoot热部署：spring-boot-devtools在Idea中热部署方法">
+<meta name="twitter:description" content="今天群里有哥们问到了热部署得问题身为JAVA程序员，等待代码编译是一件痛苦的事情。况且追求高效是程序员所具有的一种天然品性。在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载/部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷。收集了一些资料后，亲身验证，以下方法可行，请参照以下方法设置。（本文以idea 为例">
+<meta name="twitter:image" content="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/_image/2018-06-23-15-59-10.jpg">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://bug4.cn/archives/2018/04/"/>
+  <link rel="canonical" href="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html"/>
 
 
 
 
 
-  <title>归档 | Bug4.cn</title>
+  <title>SpringBoot热部署：spring-boot-devtools在Idea中热部署方法 | Bug4.cn</title>
   
 
 
@@ -143,7 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -281,74 +287,286 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu,见">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/tx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bug4.cn">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/posts/Hexo/2018-04-02-Hexo-Next-主题优化-一.html" itemprop="url">
-              
-                <span itemprop="name">Hexo-Next-主题优化(一)</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">SpringBoot热部署：spring-boot-devtools在Idea中热部署方法</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-02T20:41:33+08:00"
-              content="2018-04-02" >
-          04-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-23T15:35:09+08:00">
+                2018-06-23
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/" itemprop="url" rel="index">
+                    <span itemprop="name">在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载/部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html" class="leancloud_visitors" data-flag-title="SpringBoot热部署：spring-boot-devtools在Idea中热部署方法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  355
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>今天群里有哥们问到了热部署得问题<br>身为JAVA程序员，等待代码编译是一件痛苦的事情。况且追求高效是程序员所具有的一种天然品性。<br>在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载/部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷。收集了一些资料后，亲身验证，以下方法可行，请参照以下方法设置。（本文以idea 为例子）<br><a id="more"></a></p>
+<h3 id="第一步：增加POM-XML文件中得依赖"><a href="#第一步：增加POM-XML文件中得依赖" class="headerlink" title="第一步：增加POM.XML文件中得依赖"></a>第一步：增加POM.XML文件中得依赖</h3><p><code>**注：**热部署功能spring-boot-1.3开始有的</code><br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;  </span><br><span class="line">     &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;  </span><br><span class="line">     &lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;  </span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure></p>
+<p><code>**注**：project 中添加 spring-boot-maven-plugin,主要在eclipse中使用，idea中不需要添加此配置。</code></p>
+<h3 id="第二步：更改idea配置"><a href="#第二步：更改idea配置" class="headerlink" title="第二步：更改idea配置"></a>第二步：更改idea配置</h3><p>勾选 <strong>Build Project Automatically</strong><br><img src="/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/./_image/2018-06-23-15-59-10.jpg" alt=""></p>
+<h3 id="第三步-按-Shift-Ctrl-A-windows-mac是-command-shift-A"><a href="#第三步-按-Shift-Ctrl-A-windows-mac是-command-shift-A" class="headerlink" title="第三步: 按 Shift+Ctrl+A (windows,mac是 command+shift+A)"></a>第三步: 按 Shift+Ctrl+A (windows,mac是 command+shift+A)</h3><p>将看到弹窗 <strong>Enter Action or option name</strong>，输入<strong>“registry”</strong>，双击第一项<strong>“Registry…”</strong> ，会弹出另一个窗口，寻找<br><code>compiler.automake.allow.when.app.running</code><br>这一项，并勾选开启。然后关闭窗口。</p>
+<p><img src="/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/./_image/2018-06-23-16-08-48.jpg" alt=""></p>
+<p><img src="/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/./_image/2018-06-23-16-08-54.jpg" alt=""></p>
+<h3 id="第四步：重启-IDE"><a href="#第四步：重启-IDE" class="headerlink" title="第四步：重启 IDE"></a>第四步：重启 IDE</h3><h3 id="第五步：Chrome禁用缓存"><a href="#第五步：Chrome禁用缓存" class="headerlink" title="第五步：Chrome禁用缓存"></a>第五步：Chrome禁用缓存</h3><p>F12或者<strong>“Ctrl+Shift+I”</strong>，打开开发者工具，<strong>“Network”</strong> 选项卡下 选中打勾 <strong>“Disable Cache(while DevTools is open)” </strong></p>
+<p><strong>转自：</strong><a href="https://blog.csdn.net/dujianxiong/article/details/78957701" target="_blank" rel="noopener">https://blog.csdn.net/dujianxiong/article/details/78957701</a></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Yu,见 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Yu,见 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yu,见
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html" title="SpringBoot热部署：spring-boot-devtools在Idea中热部署方法">https://bug4.cn/posts/在接触强大的springboot框架过程中，每次修改代码后，都要重新启动。我就想，肯定有方法可以实现代码修改后热加载-部署，果不其然，springboot早已为我们准备了解决方案，且方便快捷/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SpringBoot/" rel="tag"><i class="fa fa-tag"></i> SpringBoot</a>
+          
+            <a href="/tags/热部署/" rel="tag"><i class="fa fa-tag"></i> 热部署</a>
+          
+            <a href="/tags/Idea/" rel="tag"><i class="fa fa-tag"></i> Idea</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/PHP学习-字符串函数/2018-06-23-PHP-STR-FORMAT.html" rel="next" title="PHP STR FORMAT">
+                <i class="fa fa-chevron-left"></i> PHP STR FORMAT
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aaceb8d6bcf39ce" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -356,6 +574,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -376,8 +601,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -478,6 +712,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步：增加POM-XML文件中得依赖"><span class="nav-number">1.</span> <span class="nav-text">第一步：增加POM.XML文件中得依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步：更改idea配置"><span class="nav-number">2.</span> <span class="nav-text">第二步：更改idea配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步-按-Shift-Ctrl-A-windows-mac是-command-shift-A"><span class="nav-number">3.</span> <span class="nav-text">第三步: 按 Shift+Ctrl+A (windows,mac是 command+shift+A)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四步：重启-IDE"><span class="nav-number">4.</span> <span class="nav-text">第四步：重启 IDE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五步：Chrome禁用缓存"><span class="nav-number">5.</span> <span class="nav-text">第五步：Chrome禁用缓存</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -613,6 +863,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
+<script type="text/javascript" src="/js/src/post-details.js?v="></script>
+
+
 
   
 
