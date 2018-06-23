@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="业精于勤而荒于嬉,行成于思而毁于随! 如果你想在技术的道路上走下去,就必须不停的学习和补充……" />
+  <meta name="keywords" content="PHP学习-字符串函数" />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="业精于勤而荒于嬉,行成于思而毁于随!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://bug4.cn/tags/index.html">
+<meta name="description" content="PHP学习基础之字符串函数相关系列">
+<meta name="keywords" content="PHP学习-字符串函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP STR FORMAT">
+<meta property="og:url" content="https://bug4.cn/posts/PHP/2018-06-23-PHP-STR-FORMAT.html">
 <meta property="og:site_name" content="Bug4.cn">
-<meta property="og:description" content="业精于勤而荒于嬉,行成于思而毁于随!">
+<meta property="og:description" content="PHP学习基础之字符串函数相关系列">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T09:42:48.597Z">
+<meta property="og:updated_time" content="2018-06-23T08:43:26.681Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="业精于勤而荒于嬉,行成于思而毁于随!">
+<meta name="twitter:title" content="PHP STR FORMAT">
+<meta name="twitter:description" content="PHP学习基础之字符串函数相关系列">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://bug4.cn/tags/"/>
+  <link rel="canonical" href="https://bug4.cn/posts/PHP/2018-06-23-PHP-STR-FORMAT.html"/>
 
 
 
 
 
-  <title>tags | Bug4.cn</title>
+  <title>PHP STR FORMAT | Bug4.cn</title>
   
 
 
@@ -284,40 +285,306 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug4.cn/posts/PHP/2018-06-23-PHP-STR-FORMAT.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yu,见">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/tx.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bug4.cn">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 5 个标签
+          <h1 class="post-title" itemprop="name headline">PHP STR FORMAT</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-23T10:31:06+08:00">
+                2018-06-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHP/" itemprop="url" rel="index">
+                    <span itemprop="name">PHP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/PHP/2018-06-23-PHP-STR-FORMAT.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/PHP/2018-06-23-PHP-STR-FORMAT.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/posts/PHP/2018-06-23-PHP-STR-FORMAT.html" class="leancloud_visitors" data-flag-title="PHP STR FORMAT">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  484
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/Idea/" style="font-size: 12px; color: #ccc">Idea</a> <a href="/tags/PHP/" style="font-size: 12px; color: #ccc">PHP</a> <a href="/tags/SpringBoot/" style="font-size: 12px; color: #ccc">SpringBoot</a> <a href="/tags/热部署/" style="font-size: 12px; color: #ccc">热部署</a>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>PHP学习基础之字符串函数相关系列<br><a id="more"></a></p>
+<h3 id="1-sprintf-函数"><a href="#1-sprintf-函数" class="headerlink" title="1.sprintf 函数"></a>1.sprintf 函数</h3><p><strong>描述：</strong>格式化字符串<br><strong>语法：</strong><br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sprintf(format,arg1,arg2,arg++)</span><br></pre></td></tr></table></figure></p>
+<p><strong>定义和用法：</strong><br>sprintf() 函数把格式化的字符串写入变量中。<br>arg1、arg2、++ 参数将被插入到主字符串中的百分号（%）符号处。该函数是逐步执行的。在第一个 % 符号处，插入 arg1，在第二个 % 符号处，插入 arg2，依此类推。<br><strong>注释：</strong><br>如果 % 符号多于 arg 参数，则您必须使用占位符。占位符位于 % 符号之后，由数字和 “\$” 组成。</p>
+<hr>
+<ol>
+<li>format<br>必需。规定字符串以及如何格式化其中的变量。<br>可能的值有：<ol>
+<li>%% - 返回一个百分号 %</li>
+<li>%b - 二进制数</li>
+<li>%c - ASCII 值对应的字符</li>
+<li>%d - 包含正负号的十进制数（负数、0、正数）</li>
+<li>%e - 使用小写的科学计数法（例如 1.2e+2）</li>
+<li>%E - 使用大写的科学计数法（例如 1.2E+2）</li>
+<li>%u - 不包含正负号的十进制数（大于等于 0）</li>
+<li>%f - 浮点数（本地设置）</li>
+<li>%F - 浮点数（非本地设置）</li>
+<li>%g - 较短的 %e 和 %f</li>
+<li>%G - 较短的 %E 和 %f</li>
+<li>%o - 八进制数</li>
+<li>%s - 字符串</li>
+<li>%x - 十六进制数（小写字母）</li>
+<li>%X - 十六进制数（大写字母）<br>附加的格式值。必需放置在 % 和字母之间（例如 %.2f）：</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li><code>+ （在数字前面加上 + 或 - 来定义数字的正负性。默认情况下，只有负数才做标记，正数不做标记）</code></li>
+<li><code>&#39; （规定使用什么作为填充，默认是空格。它必须与宽度指定器一起使用。例如：%&#39;x20s（使用 &quot;x&quot; 作为填充））</code></li>
+<li><code>- （左调整变量值）</code></li>
+<li><code>[0-9] （规定变量值的最小宽度）</code></li>
+<li><code>.[0-9] （规定小数位数或最大字符串长度）</code></li>
+</ul>
+<p><strong>注释：</strong>如果使用多个上述的格式值，它们必须按照以上顺序使用。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Yu,见 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Yu,见 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yu,见
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://bug4.cn/posts/PHP/2018-06-23-PHP-STR-FORMAT.html" title="PHP STR FORMAT">https://bug4.cn/posts/PHP/2018-06-23-PHP-STR-FORMAT.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PHP/" rel="tag"><i class="fa fa-tag"></i> PHP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/Hexo/2018-05-05-Hexo-Next-Go.html" rel="next" title="Hexo-Next-Go ......开始写作吧！">
+                <i class="fa fa-chevron-left"></i> Hexo-Next-Go ......开始写作吧！
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/SpringBoot/热部署/Idea/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html" rel="prev" title="SpringBoot热部署：spring-boot-devtools在Idea中热部署方法">
+                SpringBoot热部署：spring-boot-devtools在Idea中热部署方法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aaceb8d6bcf39ce" async = "async" ></script>
+</div>
+
+      
+    </div>
   </div>
 
 
@@ -326,6 +593,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -346,8 +620,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -448,6 +731,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-sprintf-函数"><span class="nav-number">1.</span> <span class="nav-text">1.sprintf 函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
