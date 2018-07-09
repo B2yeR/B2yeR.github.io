@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, Hexo Install" />
+  <meta name="keywords" content="MAVEN打包JAR,IDEA打包JAR" />
 
 
 
@@ -79,18 +79,28 @@
 
 
 
-<meta name="description" content="人闲起来真是可怕，本来已经折腾过了jekyll和Ghost，静态和动态博客也都尝了遍鲜，然而还是按捺不住寂寞又折腾起来Hexo。">
-<meta name="keywords" content="Hexo, Hexo Install">
+<meta name="description" content="在IDEA中打包java的maven项目为jar">
+<meta name="keywords" content="MAVEN打包JAR,IDEA打包JAR">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初探Hexo">
-<meta property="og:url" content="https://bug4.cn/posts/Hexo/2018-03-17-初探Hexo.html">
+<meta property="og:title" content="Idea+JAVA+MAVEN打包jar方法">
+<meta property="og:url" content="https://bug4.cn/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html">
 <meta property="og:site_name" content="Bug4.cn">
-<meta property="og:description" content="人闲起来真是可怕，本来已经折腾过了jekyll和Ghost，静态和动态博客也都尝了遍鲜，然而还是按捺不住寂寞又折腾起来Hexo。">
+<meta property="og:description" content="在IDEA中打包java的maven项目为jar">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-02T12:58:40.688Z">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/TIM%E5%9B%BE%E7%89%8720180709163208.png?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/2.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/3.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/4.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/5.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/6.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/7.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/8.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/9.jpg?x-oss-process=style/bug4.cn">
+<meta property="og:updated_time" content="2018-07-09T10:00:34.238Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初探Hexo">
-<meta name="twitter:description" content="人闲起来真是可怕，本来已经折腾过了jekyll和Ghost，静态和动态博客也都尝了遍鲜，然而还是按捺不住寂寞又折腾起来Hexo。">
+<meta name="twitter:title" content="Idea+JAVA+MAVEN打包jar方法">
+<meta name="twitter:description" content="在IDEA中打包java的maven项目为jar">
+<meta name="twitter:image" content="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/TIM%E5%9B%BE%E7%89%8720180709163208.png?x-oss-process=style/bug4.cn">
 
 
 
@@ -120,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://bug4.cn/posts/Hexo/2018-03-17-初探Hexo.html"/>
+  <link rel="canonical" href="https://bug4.cn/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html"/>
 
 
 
 
 
-  <title>初探Hexo | Bug4.cn</title>
+  <title>Idea+JAVA+MAVEN打包jar方法 | Bug4.cn</title>
   
 
 
@@ -297,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://bug4.cn/posts/Hexo/2018-03-17-初探Hexo.html">
+    <link itemprop="mainEntityOfPage" href="https://bug4.cn/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yu,见">
@@ -314,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">初探Hexo</h1>
+          <h1 class="post-title" itemprop="name headline">Idea+JAVA+MAVEN打包jar方法</h1>
         
 
         <div class="post-meta">
@@ -326,8 +336,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-17T17:58:33+08:00">
-                2018-03-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-09T16:15:37+08:00">
+                2018-07-09
               </time>
             
 
@@ -349,8 +359,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
+                  <a href="/categories/MAVEN-IDEA/" itemprop="url" rel="index">
+                    <span itemprop="name">MAVEN,IDEA</span>
                   </a>
                 </span>
 
@@ -367,8 +377,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/posts/Hexo/2018-03-17-初探Hexo.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/Hexo/2018-03-17-初探Hexo.html" itemprop="commentCount"></span>
+                <a href="/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -376,7 +386,7 @@
 
           
           
-             <span id="/posts/Hexo/2018-03-17-初探Hexo.html" class="leancloud_visitors" data-flag-title="初探Hexo">
+             <span id="/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html" class="leancloud_visitors" data-flag-title="Idea+JAVA+MAVEN打包jar方法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -401,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  328
+                  1,144
                 </span>
               
 
@@ -417,16 +427,12 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
           
 
-          
-              <div class="post-description">
-                  人闲起来真是可怕，本来已经折腾过了jekyll和Ghost，静态和动态博客也都尝了遍鲜，然而还是按捺不住寂寞又折腾起来Hexo。
-              </div>
           
 
         </div>
@@ -442,16 +448,21 @@
       
 
       
-        <p>人闲起来真是可怕，本来已经折腾过了jekyll和Ghost，静态和动态博客也都尝了遍鲜，然而还是按捺不住寂寞又折腾起来Hexo。<br><a id="more"></a></p>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>博客从2016年服务器炸了之后就再也没开过,这几天学习<strong>PHP</strong>和<strong>Go</strong>发现每次记录的东西到有道笔记中会忘记，那么还是想着用blog的方式记录下学习过程，一方面是增加记忆力，另一方面嘛 : 能够明显的看到你每天学习了些什么。记得以前用的是emblog <del>但是好像倒闭了</del> ,有好多好朋友都在用Hexo，那么自己也有那么一点点鸡动；二话不说直接开干好么……</p>
-<hr>
-<p><code>当前缩写的操作步奏全部来源于Hexo官方Doc</code>  <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo.io</a></p>
-<hr>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>官方说:安装Node.js的最佳方式是使用<a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm</a><br>cURL:<br><code>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</code><br>Wget:<br><code>$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</code><br>安装完成后，重启终端并执行下列命令即可安装 Node.js。<br><code>$ nvm install stable</code></p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。<br><code>$ npm install -g hexo-cli</code></p>
-<hr>
-<h2 id="开始建站"><a href="#开始建站" class="headerlink" title="开始建站"></a>开始建站</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p>具体请移步: <a href="https://hexo.io/zh-cn/docs/setup.html" target="_blank" rel="noopener">Hexo 建站</a></p>
+        <p>在IDEA中打包java的maven项目为jar<br><a id="more"></a><br>今天购买了IDEA全家桶的正版，体验了MAVEN JAVA的开发，却在最后一步打包jar的时候出现了问题，<br>翻阅网上的资料和复现真理了这些方法：</p>
+<ol>
+<li>用IDEA自带的打包方式[成功过一次,后续还想再研究]</li>
+<li>用Maven插件maven-shade-plugin打包</li>
+<li>用Maven插件maven-assembly-plugin打包<h3 id="用IDEA自带的打包方式"><a href="#用IDEA自带的打包方式" class="headerlink" title="用IDEA自带的打包方式"></a>用IDEA自带的打包方式</h3>打开IDEA的<code>file -&gt; Project Structure</code>,进入配置页面。如：<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/TIM%E5%9B%BE%E7%89%8720180709163208.png?x-oss-process=style/bug4.cn" alt=""><br>点击<code>Artifacts</code>，进入<code>Artifacts</code>配置页面，点击 + ，选择如下图的选项。<br>进入<code>Create JAR from Modules</code>页面，按照如下图配置。</li>
+<li>第一步选择Main函数执行的类。</li>
+<li>第二步选择如图的选项，目的是对第三方Jar包打包时做额外的配置，如果不做额外的配置可不选这个选项（但不保证打包成功）</li>
+<li>第三步需要在<code>src/main</code>目录下，新建一个<code>resources</code>目录，将<code>MANIFEST.MF</code>文件保存在这里面，因为如果用默认缺省值的话，在IDEA12版本下会有bug。</li>
+</ol>
+<p>点击OK之后，出现如下图界面，右键点击<code>&lt;output root&gt;</code>，点击<code>Create Directory</code>,创建一个libs，将所有的第三方JAR放进libs目录下。<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/2.jpg?x-oss-process=style/bug4.cn" alt=""><br>完成这样操作之后：<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/3.jpg?x-oss-process=style/bug4.cn" alt=""><br>放入之后，点击我们要打成的jar的名字，这里面是<code>kafka-cps.jar</code>,选择<code>classpath</code>进行配置。<br>编辑的结果如下：<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/4.jpg?x-oss-process=style/bug4.cn" alt=""><br>这里将所有的<code>jar</code>都写在<code>libs/</code>里面。点击<code>OK</code>，回到配置页面。<br>同时还注意在配置页面，勾选<code>build on make</code><br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/5.jpg?x-oss-process=style/bug4.cn" alt=""><br>最后点击配置页面的<code>OK</code>，完成配置。回到IDEA,点击<code>Build-&gt;Build Artifacts</code>，选择<code>build</code><br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/6.jpg?x-oss-process=style/bug4.cn" alt=""><br>就会生成我们需要的jar包。其位置在项目目录的out目录下/out/artifacts/kafka_cps_jar。<br>下面放一个正确配置的清单文件内容<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/7.jpg?x-oss-process=style/bug4.cn" alt=""></p>
+<h3 id="用MAVEN的maven-shade-plugin插件打包"><a href="#用MAVEN的maven-shade-plugin插件打包" class="headerlink" title="用MAVEN的maven-shade-plugin插件打包"></a>用MAVEN的maven-shade-plugin插件打包</h3><p>其实我最喜欢的还是用MAVEN的插件打包，这样方便又舒服 嗯~~<br>在POM.xml文件中加入如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;plugin&gt; </span><br><span class="line">  &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;  </span><br><span class="line">  &lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;  </span><br><span class="line">  &lt;version&gt;1.4&lt;/version&gt;  </span><br><span class="line">  &lt;configuration&gt; </span><br><span class="line">    &lt;createDependencyReducedPom&gt;true&lt;/createDependencyReducedPom&gt; </span><br><span class="line">  &lt;/configuration&gt;  </span><br><span class="line">  &lt;executions&gt; </span><br><span class="line">    &lt;execution&gt; </span><br><span class="line">      &lt;phase&gt;package&lt;/phase&gt;  </span><br><span class="line">      &lt;goals&gt; </span><br><span class="line">        &lt;goal&gt;shade&lt;/goal&gt; </span><br><span class="line">      &lt;/goals&gt;  </span><br><span class="line">      &lt;configuration&gt; </span><br><span class="line">        &lt;transformers&gt; </span><br><span class="line">          &lt;transformer implementation=&quot;org.apache.maven.plugins.shade.resource.ManifestResourceTransformer&quot;&gt; </span><br><span class="line">            &lt;mainClass&gt;Main.Main&lt;/mainClass&gt; </span><br><span class="line">          &lt;/transformer&gt; </span><br><span class="line">        &lt;/transformers&gt; </span><br><span class="line">      &lt;/configuration&gt; </span><br><span class="line">    &lt;/execution&gt; </span><br><span class="line">  &lt;/executions&gt; </span><br><span class="line">&lt;/plugin&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这里面配置了一个 <code>configuration</code>标签内容，在此标签下面 有一个<code>transformer</code>标签，用来配置Main函数的入口<code>&lt;mainClass&gt;Main.Main&lt;/mainClass&gt;</code>，当然此标签内容很复杂，不是上面写的那么简单，上面之所以如此简单，是因为在所有类中(包括第三方Jar)只有一个Main方法。如果第三方jar中有Main方法，就要进行额外的配置，上面这么配置，不一定能执行成功。<br>具体可以参见<a href="http://blog.csdn.net/defonds/article/details/43233131" target="_blank" rel="noopener">maven插件</a>。<br>在加入这段代码到pom.xml之后，我们就可以用maven的命令去打包了。其指令如下：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvn clean compile //清除之前target编译文件并重新编译</span><br><span class="line">mvn clean package //对项目进行打包(因为配置过插件，所以jar包是可执行的)</span><br><span class="line">mvn clean install //安装项目，然后就可以使用了</span><br></pre></td></tr></table></figure></p>
+<p>然后通过<code>java -jar cps-1.0-SNAPSHOT.jar</code>运行。<br>如果使用IDEA的话，可以通过自带的maven管理工具代替执行上面的命令。如下图所示，依次点击蓝色的部分。<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/8.jpg?x-oss-process=style/bug4.cn" alt=""></p>
+<h3 id="用maven-assembly-plugin打包"><a href="#用maven-assembly-plugin打包" class="headerlink" title="用maven-assembly-plugin打包"></a>用maven-assembly-plugin打包</h3><p>上面的方法，我们还需要点击很多命令去打包。这次利用一个新的插件，可以打包更简单。同样，在pom.xml中加入如下代码。上文的<code>maven-shade-plugin</code>插件代码可以删除。最好不要写2个插件代码。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;plugins&gt;</span><br><span class="line">          &lt;plugin&gt;</span><br><span class="line">              &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">              &lt;artifactId&gt;maven-assembly-plugin&lt;/artifactId&gt;</span><br><span class="line">              &lt;version&gt;2.3&lt;/version&gt;</span><br><span class="line">              &lt;configuration&gt;</span><br><span class="line">                  &lt;appendAssemblyId&gt;false&lt;/appendAssemblyId&gt;</span><br><span class="line">                  &lt;descriptorRefs&gt;</span><br><span class="line">                      &lt;descriptorRef&gt;jar-with-dependencies&lt;/descriptorRef&gt;</span><br><span class="line">                  &lt;/descriptorRefs&gt;</span><br><span class="line">                  &lt;archive&gt;</span><br><span class="line">                      &lt;manifest&gt;</span><br><span class="line">                          &lt;mainClass&gt;book.StartRegBooks&lt;/mainClass&gt;</span><br><span class="line">                      &lt;/manifest&gt;</span><br><span class="line">                  &lt;/archive&gt;</span><br><span class="line">              &lt;/configuration&gt;</span><br><span class="line">              &lt;executions&gt;</span><br><span class="line">                  &lt;execution&gt;</span><br><span class="line">                      &lt;id&gt;make-assembly&lt;/id&gt;</span><br><span class="line">                      &lt;phase&gt;package&lt;/phase&gt;</span><br><span class="line">                      &lt;goals&gt;</span><br><span class="line">                          &lt;goal&gt;assembly&lt;/goal&gt;</span><br><span class="line">                      &lt;/goals&gt;</span><br><span class="line">                  &lt;/execution&gt;</span><br><span class="line">              &lt;/executions&gt;</span><br><span class="line">          &lt;/plugin&gt;</span><br><span class="line">          &lt;plugin&gt;</span><br><span class="line">              &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</span><br><span class="line">              &lt;configuration&gt;</span><br><span class="line">                  &lt;source&gt;1.8&lt;/source&gt;</span><br><span class="line">                  &lt;target&gt;1.8&lt;/target&gt;</span><br><span class="line">                  &lt;encoding&gt;utf8&lt;/encoding&gt;</span><br><span class="line">              &lt;/configuration&gt;</span><br><span class="line">          &lt;/plugin&gt;</span><br><span class="line">      &lt;/plugins&gt;</span><br></pre></td></tr></table></figure></p>
+<p>这里同样配置了一个<code>manifest</code>标签来配置Main函数的入口。然后通过如下指令来实现打包。<br><code>mvn assembly:assembly</code><br>如果使用IDEA的话，可以通过自带的maven管理工具代替执行上面的命令。如下图所示，点击蓝色的部分。<br><img src="https://img.bug4.cn/post/Idea%2BJAVA%2BMAVEN%E6%89%93%E5%8C%85jar%E6%96%B9%E6%B3%95/9.jpg?x-oss-process=style/bug4.cn" alt=""><br>然后通过执行<code>java -jar cps-1.0-SNAPSHOT-jar-with-dependencies.jar</code>运行。</p>
 
       
     </div>
@@ -501,7 +512,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://bug4.cn/posts/Hexo/2018-03-17-初探Hexo.html" title="初探Hexo">https://bug4.cn/posts/Hexo/2018-03-17-初探Hexo.html</a>
+    <a href="https://bug4.cn/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html" title="Idea+JAVA+MAVEN打包jar方法">https://bug4.cn/posts/MAVEN-IDEA/2018-07-09-Idea-JAVA-MAVEN打包jar方法.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -516,7 +527,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+            <a href="/tags/JAVA/" rel="tag"><i class="fa fa-tag"></i> JAVA</a>
+          
+            <a href="/tags/MAVEN/" rel="tag"><i class="fa fa-tag"></i> MAVEN</a>
+          
+            <a href="/tags/IDEA/" rel="tag"><i class="fa fa-tag"></i> IDEA</a>
           
         </div>
       
@@ -529,15 +544,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/posts/SpringBoot/热部署/Idea/2018-06-23-SpringBoot热部署：spring-boot-devtools在Idea中热部署方法.html" rel="next" title="SpringBoot热部署：spring-boot-devtools在Idea中热部署方法">
+                <i class="fa fa-chevron-left"></i> SpringBoot热部署：spring-boot-devtools在Idea中热部署方法
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/Hexo/2018-04-02-Hexo-Next-主题优化-一.html" rel="prev" title="Hexo-Next-主题优化(一)">
-                Hexo-Next-主题优化(一) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -719,7 +734,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始建站"><span class="nav-number">4.</span> <span class="nav-text">开始建站</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#用IDEA自带的打包方式"><span class="nav-number">1.</span> <span class="nav-text">用IDEA自带的打包方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用MAVEN的maven-shade-plugin插件打包"><span class="nav-number">2.</span> <span class="nav-text">用MAVEN的maven-shade-plugin插件打包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用maven-assembly-plugin打包"><span class="nav-number">3.</span> <span class="nav-text">用maven-assembly-plugin打包</span></a></li></ol></div>
             
 
           </div>
